@@ -228,7 +228,7 @@ function woocommerce_mobilpay_card_init() {
 				$errorMessage = 'Invalid request method for payment confirmation.';
 			}
 
-			// Generate XML response
+			// Generate xml response
 			ob_start();
 			echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n";
 			if ( $errorCode == 0 ) {
