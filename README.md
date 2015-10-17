@@ -8,20 +8,22 @@ Extends WooCommerce payment options by adding the mobilPay Card Gateway.
 * Activate the plugin from WordPress plugins panel
 
 ## Screenshots
+Backend: WooCommerce > Settings > Checkout
 [![mobilPay Card Gateway for WooCommerce - Backend](https://raw.githubusercontent.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/master/screenshot-1.jpg "Backend")](https://github.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/blob/master/screenshot-1.jpg)
+Frontend: Your website checkout page
 [![mobilPay Card Gateway for WooCommerce - Frontend](https://raw.githubusercontent.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/master/screenshot-2.jpg "Frontend")](https://github.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/blob/master/screenshot-2.jpg)
 
 ## Merchant certificates
 
-### Sandbox:
+#### Sandbox
 * If you want to test the plugin under sandbox enviroment, upload your testing `.key` and `.cer` files into `certificates` folder of the plugin.
 * These certificates should look like this: `sandbox.XXXX-XXXX-XXXX-XXXX-XXXXprivate.key` and `sandbox.XXXX-XXXX-XXXX-XXXX-XXXX.public.cer`.
 
-### Live:
+#### Live
 * Upload your live `.key` and `.cer` files into `certificates` folder of the plugin.
 * These certificates should look like this: `live.XXXX-XXXX-XXXX-XXXX-XXXXprivate.key` and `live.XXXX-XXXX-XXXX-XXXX-XXXX.public.cer`.
 
-### Note:
+#### Note
 * Don't rename `.key` and `.cer` files and make shure that `XXXX-XXXX-XXXX-XXXX-XXXX` matches your Merchant ID.
 
 ## License
@@ -32,7 +34,7 @@ mobilPay Card Gateway for WooCommerce is distributed in the hope that it will be
 You should have received a copy of the GNU General Public License along with mobilPay Card Gateway for WooCommerce. If not, see http://www.gnu.org/licenses/gpl-2.0.txt.
 
 ## Credits
-Some of the classes that make all the payment process possible are developed by NETOPIA @mobilPay.
+Some of the classes that make all the payment process possible are developed by [![NETOPIA mobilPay](NETOPIA mobilPay)](https://github.com/mobilPay)
 
 ## Changelog
 #### v 1.0
