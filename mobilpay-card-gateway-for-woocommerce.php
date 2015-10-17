@@ -26,7 +26,7 @@ along with mobilPay Card Gateway for WooCommerce.
 If not, see https://www.gnu.org/licenses/gpl-2.0.html
 */
 
-if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access this directly
+if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access this directly.
 
 add_action('plugins_loaded', 'woocommerce_mobilpay_card_init', 0);
 
