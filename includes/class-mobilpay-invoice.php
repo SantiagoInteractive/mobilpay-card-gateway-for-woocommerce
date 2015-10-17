@@ -1,5 +1,10 @@
 <?php
 // Class Mobilpay Payment Invoice Class
+/**
+ * @copyright NETOPIA
+ * @author Claudiu Tudose
+ * @version 1.0
+ */
 class Mobilpay_Payment_Invoice {
 
 	const ERROR_INVALID_PARAMETER = 0x11110001;

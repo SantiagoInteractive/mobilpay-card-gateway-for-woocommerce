@@ -1,5 +1,10 @@
 <?php
 // Mobilpay Payment Request Class
+/**
+ * @copyright NETOPIA
+ * @author Claudiu Tudose
+ * @version 1.0
+ */
 class Mobilpay_Payment_Request {
 
 	const PAYMENT_TYPE_SMS  = 0x01;

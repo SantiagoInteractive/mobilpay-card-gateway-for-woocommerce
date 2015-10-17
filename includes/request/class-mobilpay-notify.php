@@ -1,5 +1,10 @@
 <?php
 // Mobilpay Payment Request Notify Class
+/**
+ * @copyright NETOPIA
+ * @author Claudiu Tudose
+ * @version 1.0
+ */
 class Mobilpay_Payment_Request_Notify {
 
     const ERROR_LOAD_FROM_XML_CRC_ATTR_MISSING = 0x60000001;

@@ -34,7 +34,7 @@ mobilPay Card Gateway for WooCommerce is distributed in the hope that it will be
 You should have received a copy of the GNU General Public License along with mobilPay Card Gateway for WooCommerce. If not, see http://www.gnu.org/licenses/gpl-2.0.txt.
 
 ## Credits
-Some of the classes that make all the payment process possible are developed by [![NETOPIA mobilPay](NETOPIA mobilPay)](https://github.com/mobilPay)
+Some of the classes that make all the payment process possible are developed by [![NETOPIA mobilPay]](https://github.com/mobilPay)
 
 ## Changelog
 #### v 1.0

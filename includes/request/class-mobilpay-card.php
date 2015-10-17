@@ -1,5 +1,10 @@
 <?php
 // Mobilpay Payment Request Card Class
+/**
+ * @copyright NETOPIA
+ * @author Claudiu Tudose
+ * @version 1.0
+ */
 class Mobilpay_Payment_Request_Card extends Mobilpay_Payment_Request_Abstract {
 
 	const ERROR_LOAD_FROM_XML_ORDER_INVOICE_ELEM_MISSING = 0x30000001;

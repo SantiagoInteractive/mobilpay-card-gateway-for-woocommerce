@@ -1,5 +1,10 @@
 <?php
 // Mobilpay Payment Address Class
+/**
+ * @copyright NETOPIA
+ * @author Claudiu Tudose
+ * @version 1.0
+ */
 class Mobilpay_Payment_Address {
 
     const TYPE_COMPANY = 'company';
