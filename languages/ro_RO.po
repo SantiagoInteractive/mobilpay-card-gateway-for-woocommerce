@@ -1,0 +1,108 @@
+# Copyright (c) 2015 Santiago Interactive
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: mobilPay Card Gateway for Woocommerce 1.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Santiago Interactive <desk@santiagointeractive.com>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.7.3\n"
+"Language: ro\n"
+
+#: mobilpay-card-gateway-for-woocommerce.php:41
+msgid "mobilPay Card"
+msgstr "mobilPay Card"
+
+#: mobilpay-card-gateway-for-woocommerce.php:44
+msgid "Continue to mobilPay"
+msgstr "Continuă la mobilPay"
+
+#: mobilpay-card-gateway-for-woocommerce.php:70
+msgid "Enable/Disable"
+msgstr "Activează/Dezactivează"
+
+#: mobilpay-card-gateway-for-woocommerce.php:71
+msgid "Enable mobilPay Card"
+msgstr "Activează mobilPay Card"
+
+#: mobilpay-card-gateway-for-woocommerce.php:76
+msgid "Title"
+msgstr "Titlu"
+
+#: mobilpay-card-gateway-for-woocommerce.php:78
+msgid "This controls the title which the user sees during checkout."
+msgstr "Titlul opţiunii de plată afişat clientului în pagina de finalizare comandă."
+
+#: mobilpay-card-gateway-for-woocommerce.php:79
+msgid "Credit/Debit Card"
+msgstr "Card de credit/debit"
+
+#: mobilpay-card-gateway-for-woocommerce.php:82
+msgid "Description"
+msgstr "Descriere"
+
+#: mobilpay-card-gateway-for-woocommerce.php:84
+msgid "This controls the description which the user sees during checkout."
+msgstr "Descrierea opţiunii de plată afişat clientului în pagina de finalizare comandă."
+
+#: mobilpay-card-gateway-for-woocommerce.php:85
+msgid "Pay with your credit/debit card via mobilPay 3D Secure gateway."
+msgstr "Plăteşte cu cardul de credit/debit prin mobilPay 3D Secure."
+
+#: mobilpay-card-gateway-for-woocommerce.php:88
+msgid "Merchant ID"
+msgstr "ID comerciant"
+
+#: mobilpay-card-gateway-for-woocommerce.php:90
+msgid "Unique key assigned to your mobilPay merchant account for the payment process."
+msgstr "Cheia unică asociată contului tău de comerciant mobilPay necesară procesului de plată."
+
+#: mobilpay-card-gateway-for-woocommerce.php:93
+msgid "Sandbox"
+msgstr "Sandbox"
+
+#: mobilpay-card-gateway-for-woocommerce.php:94
+msgid "Enable mobilPay sandbox"
+msgstr "Activează mobilPay sandbox"
+
+#: mobilpay-card-gateway-for-woocommerce.php:96
+msgid "The mobilPay sandbox environment can be used to test payments."
+msgstr "Sandbox mobilPay este un mediu de testare a plăţilor."
+
+#: mobilpay-card-gateway-for-woocommerce.php:104
+msgid "mobilPay Card Gateway"
+msgstr "mobilPay Card Gateway"
+
+#: mobilpay-card-gateway-for-woocommerce.php:118
+#: mobilpay-card-gateway-for-woocommerce.php:128
+msgid "To complete your order please make the payment."
+msgstr "Pentru a finaliza comanda vă rugăm să efectuaţi plata."
+
+#: mobilpay-card-gateway-for-woocommerce.php:128
+msgid "Payment failed."
+msgstr "Plată eşuată."
+
+#: mobilpay-card-gateway-for-woocommerce.php:129
+#: mobilpay-card-gateway-for-woocommerce.php:349
+msgid "Pay for order"
+msgstr "Plăteşte pentru comandă"
+
+#: mobilpay-card-gateway-for-woocommerce.php:282
+msgid "Credit/debit card payment via mobilPay"
+msgstr "Plata cu cardul de credit/debit prin mobilPay"
+
+#: mobilpay-card-gateway-for-woocommerce.php:324
+msgid "Redirecting to mobilPay 3D Secure payment gateway to make the payment."
+msgstr "Redirecţionare către portalul mobilPay 3D Secure pentru efectuarea plăţii."
+
+#: mobilpay-card-gateway-for-woocommerce.php:349
+msgid "Cancel order"
+msgstr "Anulează comanda"
+
+#: mobilpay-card-gateway-for-woocommerce.php:370
+msgid "Settings"
+msgstr "Setări"
