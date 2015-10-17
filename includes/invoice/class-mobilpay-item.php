@@ -1,7 +1,7 @@
 <?php
 // Mobilpay Payment Invoice Item Class
 /**
- * @copyright NETOPIA
+ * @copyright NETOPIA https://github.com/mobilPay
  * @author Claudiu Tudose
  * @version 1.0
  */
