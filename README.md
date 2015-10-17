@@ -8,8 +8,8 @@ Extends WooCommerce payment options by adding the mobilPay Card Gateway.
 * Activate the plugin from WordPress plugins panel
 
 ## Screenshots
-[![mobilPay Card Gateway for WooCommerce - Backend](https://github.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/screenshot-1.png "Backend")](https://github.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/screenshot-1.png)
-[![mobilPay Card Gateway for WooCommerce - Frontend](https://github.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/screenshot-2.png "Frontend")](https://github.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/screenshot-1.png)
+[![mobilPay Card Gateway for WooCommerce - Backend](https://raw.githubusercontent.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/master/screenshot-1.jpg "Backend")](https://github.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/blob/master/screenshot-1.jpg)
+[![mobilPay Card Gateway for WooCommerce - Frontend](https://raw.githubusercontent.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/master/screenshot-2.jpg "Frontend")](https://github.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/blob/master/screenshot-2.jpg)
 
 ## Merchant certificates
 
