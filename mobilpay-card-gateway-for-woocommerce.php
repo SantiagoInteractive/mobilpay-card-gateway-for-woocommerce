@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: mobilPay Card Gateway for WooCommerce
-Plugin URI:  http://santiagointeractive.com/plugins/mobilpay-card-gateway-for-woocommerce/
+Plugin URI:  https://github.com/santiagointeractive/mobilpay-card-gateway-for-woocommerce/
 Description: Extends WooCommerce payment options by adding the mobilPay Card Gateway.
 Version:     1.0
 Author:      Santiago Interactive
