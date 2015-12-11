@@ -25,7 +25,7 @@ This plugin is meant to be used by merchants in Romania.
 #### Who can use this plugin?
 
 Any merchant that contracted mobilPay credit/debit card payment processing services.
-Basically romanian companies and individuals.
+Basically romanian companies.
 
 #### Can I take payments from PayPal?
 
@@ -61,7 +61,7 @@ Some of the classes that make all the payment process possible are developed by 
 
 ## Changelog
 #### v 1.0
-- Initial release
+- Initial release (Tested up to WP 4.4 with WC 2.4.12)
 
 ## Donate
 I put some of my free time into developing and maintaining this plugin.

@@ -3,8 +3,8 @@ Contributors: SantiagoInteractive
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R8LYPEDYY8EZE
 Tags: mobilpay, woocommerce, mobilpay card, mobilpay payment gateway, mobilpay for woocommerce, mobilpay romania, mobilpay card for woocommerce
 Requires at least: 4.0.1
-Tested up to: 4.3.1
-Stable tag: 4.3
+Tested up to: 4.4
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,7 +46,7 @@ You can also find this project on [GitHub](https://github.com/santiagointeractiv
 = Who can use this plugin? =
 
 Any merchant that contracted mobilPay credit/debit card payment processing services.
-Basically romanian companies and individuals.
+Basically romanian companies.
 
 = Can I take payments from PayPal? =
 
@@ -81,4 +81,4 @@ Don't rename `.key` and `.cer` files and make sure that `XXXX-XXXX-XXXX-XXXX-XXX
 == Changelog ==
 
 = 1.0 =
-* Initial release
+* Initial release (Tested up to WP 4.4 with WC 2.4.12)
