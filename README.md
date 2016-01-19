@@ -61,7 +61,7 @@ Some of the classes that make all the payment process possible are developed by 
 
 ## Changelog
 #### v 1.0
-- Initial release (Tested up to WP 4.4 with WC 2.4.12)
+- Initial release (Tested up to WP 4.4.1 with WC 2.5.0)
 
 ## Donate
 I put some of my free time into developing and maintaining this plugin.
