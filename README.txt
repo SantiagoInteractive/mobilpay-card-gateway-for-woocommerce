@@ -3,7 +3,7 @@ Contributors: SantiagoInteractive
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R8LYPEDYY8EZE
 Tags: mobilpay, woocommerce, mobilpay card, mobilpay payment gateway, mobilpay for woocommerce, mobilpay romania, mobilpay card for woocommerce
 Requires at least: 4.0.1
-Tested up to: 4.4.1
+Tested up to: 4.6
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -81,4 +81,4 @@ Don't rename `.key` and `.cer` files and make sure that `XXXX-XXXX-XXXX-XXXX-XXX
 == Changelog ==
 
 = 1.0 =
-* Initial release (Tested up to WP 4.4.1 with WC 2.5.0)
+* Initial release (Tested up to WP 4.6 with WC 2.6.4)
