@@ -61,7 +61,7 @@ Some of the classes that make all the payment process possible are developed by 
 
 ## Changelog
 #### v 1.0
-- Initial release (Tested up to WP 4.6 with WC 2.6.4)
+- Initial release (Tested up to WP 4.6 with WooCommerce 2.6.4)
 
 ## Donate
 I put some of my free time into developing and maintaining this plugin.

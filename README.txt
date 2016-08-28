@@ -81,4 +81,4 @@ Don't rename `.key` and `.cer` files and make sure that `XXXX-XXXX-XXXX-XXXX-XXX
 == Changelog ==
 
 = 1.0 =
-* Initial release (Tested up to WP 4.6 with WC 2.6.4)
+* Initial release (Tested up to WP 4.6 with WooCommerce 2.6.4)
