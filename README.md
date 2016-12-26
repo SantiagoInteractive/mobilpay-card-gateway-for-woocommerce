@@ -49,7 +49,7 @@ These certificates should look like this: `live.XXXX-XXXX-XXXX-XXXX-XXXXprivate.
 
 Don't rename `.key` and `.cer` files and make sure that `XXXX-XXXX-XXXX-XXXX-XXXX` matches your Merchant ID.
 
-##### Payment redirect is not working. Why?
+#### Payment redirect is not working. Why?
 
 WooCommerce plugin fails to load jQuery Cookie JavaScript due to current Mod_Security ruleset on your web server. Files: `jquery.cookie.js` and `jquery.cookie.min.js`, located inside folder `/plugins/woocommerce/assets/js/jquery-cookie/` may cause some issues with "Order" button and other minor template issues if not loaded properly.
 
