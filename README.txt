@@ -3,7 +3,7 @@ Contributors: SantiagoInteractive
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R8LYPEDYY8EZE
 Tags: mobilpay, woocommerce, mobilpay card, mobilpay payment gateway, mobilpay for woocommerce, mobilpay romania, mobilpay card for woocommerce
 Requires at least: 4.0.1
-Tested up to: 4.6
+Tested up to: 4.7
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -54,21 +54,45 @@ No. You can only take payments from credit/debit card processed by mobilPay only
 
 = How can I add my merchant certificates? =
 
-**Sandbox:**
+Sandbox:
 
 If you want to test the plugin under sandbox enviroment, upload your testing `private.key` and `public.cer` files into `certificates` folder of the plugin.
 
 These certificates should look like this: `sandbox.XXXX-XXXX-XXXX-XXXX-XXXXprivate.key` and `sandbox.XXXX-XXXX-XXXX-XXXX-XXXX.public.cer`.
 
-**Live:**
+Live:
 
 Upload your live `private.key` and `public.cer` files into `certificates` folder of the plugin.
 
 These certificates should look like this: `live.XXXX-XXXX-XXXX-XXXX-XXXXprivate.key` and `live.XXXX-XXXX-XXXX-XXXX-XXXX.public.cer`.
 
-**Note:**
+Note:
 
 Don't rename `.key` and `.cer` files and make sure that `XXXX-XXXX-XXXX-XXXX-XXXX` matches your Merchant ID.
+
+= Payment redirect is not working. Why? =
+
+WooCommerce plugin fails to load jQuery Cookie JavaScript due to current Mod_Security ruleset on your web server. Files: `jquery.cookie.js` and `jquery.cookie.min.js`, located inside folder `/plugins/woocommerce/assets/js/jquery-cookie/` may cause some issues with "Order" button and other minor template issues if not loaded properly.
+
+To fix this small issue folow these steps:
+
+Step 1: Login to FTP then rename files inside folder `/plugins/woocommerce/assets/js/jquery-cookie/`:
+
+`jquery.cookie.js` into `jquery_cookie.js`
+`jquery.cookie.min.js` into `jquery_cookie.min.js`
+
+Step 2: Inside folder `/wp-content/themes/` find theme which is in use, for example, twentyfourteen then add following lines into `functions.php`:
+
+`add_action( 'wp_enqueue_scripts', 'custom_woo_cookie_frontend' );`
+
+`function custom_woo_cookie_frontend() {
+  global $post, $woocommerce;
+  $suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+  wp_deregister_script( 'jquery-cookie' );
+  wp_register_script( 'jquery-cookie', $woocommerce->plugin_url() . '/assets/js/jquery-cookie/jquery_cookie' . $suffix . '.js', array( 'jquery' ), '', true );
+}`
+
+Now the JavaScript files `jquery_cookie.js` and `jquery_cookie.min.js` won't produce 404 errors due to Mod_Security module interference.
 
 == Screenshots ==
 
@@ -81,4 +105,4 @@ Don't rename `.key` and `.cer` files and make sure that `XXXX-XXXX-XXXX-XXXX-XXX
 == Changelog ==
 
 = 1.0 =
-* Initial release (Tested up to WP 4.6 with WooCommerce 2.6.4)
+* Initial release (Tested up to WP 4.7 with WooCommerce 2.6.11)
