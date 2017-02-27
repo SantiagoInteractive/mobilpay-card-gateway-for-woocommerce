@@ -64,12 +64,14 @@ Step 2: Inside folder `/wp-content/themes/` find theme which is in use, for exam
 
 `add_action( 'wp_enqueue_scripts', 'custom_woo_cookie_frontend' );`
 
-`function custom_woo_cookie_frontend() {
+```
+function custom_woo_cookie_frontend() {
   global $post, $woocommerce;
   $suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
   wp_deregister_script( 'jquery-cookie' );
   wp_register_script( 'jquery-cookie', $woocommerce->plugin_url() . '/assets/js/jquery-cookie/jquery_cookie' . $suffix . '.js', array( 'jquery' ), '', true );
-}`
+}
+```
 
 Now the JavaScript files `jquery_cookie.js` and `jquery_cookie.min.js` won't produce 404 errors due to Mod_Security module interference.
 
@@ -84,6 +86,11 @@ You should have received a copy of the GNU General Public License along with mob
 Some of the classes that make all the payment process possible are developed by [![NETOPIA mobilPay](NETOPIA mobilPay)](https://github.com/mobilPay)
 
 ## Changelog
+
+#### v 1.0.1
+- Fixed empty return url issue in some cases
+- Tested up to WP 4.7.2 with WooCommerce 2.6.14
+
 #### v 1.0
 - Initial release (Tested up to WP 4.7 with WooCommerce 2.6.11)
 
