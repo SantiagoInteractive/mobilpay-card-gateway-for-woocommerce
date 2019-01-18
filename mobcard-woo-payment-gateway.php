@@ -190,7 +190,7 @@ function woocommerce_mobilpay_card_init() {
 										// Payment has been successful
 										$order->add_order_note( $errorMessage );
 										// Confirm processed amount
-										$order->add_order_note( 'Amount paid: ', $objPmReq->objPmNotify->processedAmount.' RON' );
+										$order->add_order_note( 'Amount paid: '.$objPmReq->objPmNotify->processedAmount.' RON' );
 										// Empty shopping cart
 										$woocommerce->cart->empty_cart();
 									}
