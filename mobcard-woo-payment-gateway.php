@@ -50,6 +50,7 @@ function woocommerce_mobilpay_card_init() {
 			$this->description = $this->settings['description'];
 			$this->merchant_id = $this->settings['trans_key'];
 			$this->environment = $this->settings['environment'];
+			$this->currency    = $this->settings['currency'];
 
 			$this->notify_url  = WC()->api_request_url( 'WC_Mobilpay_Card' );
 
@@ -88,6 +89,16 @@ function woocommerce_mobilpay_card_init() {
 					'title'    => __( 'Merchant ID', 'mobilpay' ),
 					'type'     => 'text',
 					'desc_tip' => __( 'Unique key assigned to your mobilPay merchant account for the payment process.', 'mobilpay' ),
+				),
+				'currency' => array(
+					'title'    => __( 'Product Currency', 'mobilpay' ),
+					'type'     => 'select',
+					'desc_tip' => __( 'Products currency (RON, EUR).', 'mobilpay' ),
+					'default'     => 'RON',
+					'options' => array(
+						'RON' => 'RON',
+						'EUR' => 'EUR',
+					),
 				),
 				'environment' => array(
 					'title'       => __( 'Sandbox', 'mobilpay' ),
@@ -178,6 +189,8 @@ function woocommerce_mobilpay_card_init() {
 										$order->payment_complete();
 										// Payment has been successful
 										$order->add_order_note( $errorMessage );
+										// Confirm processed amount
+										$order->add_order_note( 'Amount paid: '.$objPmReq->objPmNotify->processedAmount.' RON' );
 										// Empty shopping cart
 										$woocommerce->cart->empty_cart();
 									}
@@ -275,7 +288,7 @@ function woocommerce_mobilpay_card_init() {
 
 				// Payment information: currency, amount, details
 				$objPmReqCard->invoice           = new Mobilpay_Payment_Invoice();
-				$objPmReqCard->invoice->currency = 'RON'; // currency accepted by mobilPay
+				$objPmReqCard->invoice->currency = $this->currency; // currency accepted by mobilPay
 				$objPmReqCard->invoice->amount   = $order->order_total;
 				$objPmReqCard->invoice->details  = __('Credit/debit card payment via mobilPay', 'mobilpay');
 				
